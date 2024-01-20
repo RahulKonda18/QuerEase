@@ -221,7 +221,7 @@
         {
             "tag": "unknown",
             "patterns": [
-                "Hii"
+                "laptop"
             ],
             "responses": [
                 "Thank you for your question! It seems currently I don't have information on that specific question. I have escalated your query to our concerned team and they will get back to you shortly."

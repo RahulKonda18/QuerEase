@@ -54,7 +54,7 @@ class Chatbox {
         })
         .then(r => r.json())
         .then(r => {
-            let msg2 = {name: "Sam" , message: r.answer};
+            let msg2 = {name: "Sam" , message: r.answer, category:r.category, similar:r.similar};
             this.messages.push(msg2);
             this.addMessage(msg2);
             this.updateChatText(chatbox)
@@ -79,12 +79,25 @@ class Chatbox {
   }
 }
 
+     myFunctions(event){
+     console.log(event.target.innerHTML)
+     const {openButton,chatBox,sendButton} = this.args;
+     const node = chatBox.querySelector('input');
+     node.value=event.target.innerHTML
+this.onSendButton(chatBox)
+     }
 
     updateChatText(chatbox){
     var html = '';
     this.messages.slice().reverse().forEach(function(item,index){
         if(item.name === "Sam"){
-            html += '<div class="messages__item messages__item--visitor">' + item.message + '</div>'
+            html += '<div value="${item.similar[1]}" onclick="chatbox.myFunctions(event)" class="messages__item similar">' + item.similar[1] + '</div>' +
+             '<div value="${item.similar[2]}" onclick="chatbox.myFunctions(event)" class="messages__item similar">' + item.similar[2] + '</div>'+
+             '<p class="related">Related: </p>'+
+            '<div class="messages__item messages__item--visitor">' + item.message +
+            '<p class="category"> category: ' + item.category
+             +'</p>' +'</div>'
+
         }
         else{
             html += '<div class="messages__item messages__item--operator">' + item.message + '</div>'

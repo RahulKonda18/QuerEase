@@ -13,7 +13,7 @@ def index_get():
 def predict():
     text = request.get_json().get("message")
     response = get_response(text)
-    message = {"answer": response}
+    message = {"answer": response['answer'], "similar": response['similar'], "category": response['category']}
     return jsonify(message)
 
 if __name__ == "__main__":

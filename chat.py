@@ -27,6 +27,7 @@ model.eval()
 
 bot_name = "Sam"
 
+
 def get_response(msg):
     sentence = tokenize(msg)
     X = bag_of_words(sentence, all_words)
@@ -43,18 +44,27 @@ def get_response(msg):
     if prob.item() > 0.75:
         for intent in intents['intents']:
             if tag == intent["tag"]:
-                return random.choice(intent['responses'])+"//Category: "+tag + str(intent['patterns'])
+                return ({
+                    "answer": random.choice(intent['responses']),
+                    "category": tag,
+                    "similar": intent['patterns']
+                })
     for intent in intents['intents']:
         if "unknown" == intent["tag"]:
             intent['patterns'].append(msg)
-            print(intent['patterns'])
+
+    # writing new data onto the json file
     newdata = json.dumps(intents, indent=4)
     with open('modified.json', 'w') as file:
         file.write(newdata)
-    
-    return ("Thank you for your question! It seems currently I don't have information on that "
-            "specific question. I have escalated your query to our concerned team and"
-            " they will get back to you shortly.")
+
+    return ({
+        "answer": "Thank you for your question! It seems currently I don't have information on that "
+                  "specific question. I have escalated your query to our concerned team and"
+                  " they will get back to you shortly.",
+        "category": "new query",
+        "similar": "NA"
+    })
 
 
 if __name__ == "__main__":
@@ -67,4 +77,3 @@ if __name__ == "__main__":
 
         resp = get_response(sentence)
         print(resp)
-
