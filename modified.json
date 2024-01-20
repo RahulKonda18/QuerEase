@@ -1,0 +1,231 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi",
+                "Hey",
+                "How are you",
+                "Is anyone there?",
+                "Hello",
+                "Good day"
+            ],
+            "responses": [
+                "Hey :-)",
+                "Hello, thanks for visiting",
+                "Hi there, what can I do for you?",
+                "Hi there, how can I help?"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye"
+            ],
+            "responses": [
+                "See you later, thanks for visiting",
+                "Have a nice day",
+                "Bye! Come back again soon."
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "That's helpful",
+                "Thank's a lot!"
+            ],
+            "responses": [
+                "Happy to help!",
+                "Any time!",
+                "My pleasure"
+            ]
+        },
+        {
+            "tag": "items",
+            "patterns": [
+                "Which electronic items do you have?",
+                "What kinds of electronics are there?",
+                "What electronic products do you sell?"
+            ],
+            "responses": [
+                "We offer a range of electronics, including smartphones, laptops, and accessories.",
+                "Our product range includes electronic gadgets like smartphones, laptops, and accessories."
+            ]
+        },
+        {
+            "tag": "payments",
+            "patterns": [
+                "Do you accept credit cards for electronic purchases?",
+                "Can I pay for electronics with Mastercard?",
+                "Are electronic payments through Paypal accepted?",
+                "What payment methods are available for electronic items?"
+            ],
+            "responses": [
+                "We accept VISA, Mastercard, and Paypal for electronic purchases.",
+                "Electronic payments can be made using major credit cards like VISA and Mastercard, as well as through Paypal."
+            ]
+        },
+        {
+            "tag": "delivery",
+            "patterns": [
+                "How long does electronic item delivery take?",
+                "What's the shipping time for electronics?",
+                "When can I expect delivery for my electronic order?"
+            ],
+            "responses": [
+                "Delivery of electronic items typically takes 2-4 days.",
+                "Shipping for electronics usually takes 2-4 days."
+            ]
+        },
+        {
+            "tag": "funny",
+            "patterns": [
+                "Tell me a tech joke!",
+                "Tell me something funny about electronics!",
+                "Do you know a joke related to technology?"
+            ],
+            "responses": [
+                "Why do programmers prefer dark mode? Because light attracts bugs!",
+                "Why did the computer go to therapy? It had too many bytes of emotional baggage."
+            ]
+        },
+        {
+            "tag": "best-deals",
+            "patterns": [
+                "What are the best electronic deals?",
+                "Tell me about any current promotions on electronics.",
+                "Are there any discounts on electronic items?"
+            ],
+            "responses": [
+                "Check out our current promotions for great deals on the latest electronic gadgets!",
+                "Explore our website for special discounts on top-quality electronic products."
+            ]
+        },
+        {
+            "tag": "customer-support",
+            "patterns": [
+                "I need help with my electronic order.",
+                "Can you assist with an issue I'm having with an electronic item?",
+                "How can I contact customer support for electronics?"
+            ],
+            "responses": [
+                "Certainly! Please provide your order number, and we'll assist you with any issues.",
+                "For electronic-related concerns, feel free to contact our customer support. We're here to help!"
+            ]
+        },
+        {
+            "tag": "delivery_time",
+            "patterns": [
+                "When will my order arrive?",
+                "Delivery time?",
+                "How long does it take to deliver?"
+            ],
+            "responses": [
+                "The delivery time depends on your location. Typically, it takes 2-5 business days for standard delivery."
+            ]
+        },
+        {
+            "tag": "rating",
+            "patterns": [
+                "How can I rate my experience?",
+                "Leave a rating",
+                "Rate this service"
+            ],
+            "responses": [
+                "You can leave a rating after you receive your order. We appreciate your feedback!"
+            ]
+        },
+        {
+            "tag": "discounts",
+            "patterns": [
+                "Are there any discounts available?",
+                "How can I get a discount?",
+                "Tell me about special offers"
+            ],
+            "responses": [
+                "Yes, we frequently offer discounts and promotions. Check our website or app for the latest deals."
+            ]
+        },
+        {
+            "tag": "delivery_options",
+            "patterns": [
+                "What delivery options do you offer?",
+                "Tell me about delivery choices",
+                "Can I choose express delivery?"
+            ],
+            "responses": [
+                "We offer standard and express delivery options. You can select your preferred delivery method during checkout."
+            ]
+        },
+        {
+            "tag": "order_status",
+            "patterns": [
+                "Check my order status",
+                "Where is my package?",
+                "Track my order"
+            ],
+            "responses": [
+                "To check your order status, please provide your order number.",
+                "Sure, I can help you with that. Could you please share your order number?"
+            ]
+        },
+        {
+            "tag": "product_recommendation",
+            "patterns": [
+                "Can you recommend a laptop?",
+                "Suggest a good smartphone",
+                "What's your best-selling product?"
+            ],
+            "responses": [
+                "Certainly! For laptops, I recommend our latest model with high performance and sleek design.",
+                "Our top-selling smartphone is known for its advanced features and durability."
+            ]
+        },
+        {
+            "tag": "tech_specs",
+            "patterns": [
+                "Tell me about the specifications",
+                "Can you recommend a laptop?",
+                "Give me details about the product"
+            ],
+            "responses": [
+                "Sure, I can provide you with detailed technical specifications. Could you specify which product you're interested in?"
+            ]
+        },
+        {
+            "tag": "payment_issues",
+            "patterns": [
+                "I'm having issues with payment",
+                "Payment error",
+                "Unable to complete the purchase"
+            ],
+            "responses": [
+                "I apologize for the inconvenience. Please double-check your payment details, or you can contact our customer support for assistance."
+            ]
+        },
+        {
+            "tag": "return_policy",
+            "patterns": [
+                "What is your return policy?",
+                "Can I return a product?",
+                "Tell me about the return process"
+            ],
+            "responses": [
+                "Our return policy allows you to return products within 30 days of purchase. Please check our website for detailed information on the return process."
+            ]
+        },
+        {
+            "tag": "unknown",
+            "patterns": [
+                "Hii"
+            ],
+            "responses": [
+                "Thank you for your question! It seems currently I don't have information on that specific question. I have escalated your query to our concerned team and they will get back to you shortly."
+            ]
+        }
+    ]
+}

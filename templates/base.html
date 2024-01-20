@@ -3,8 +3,8 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
 <head>
-    <meta charset="UTF-8">
     <title>Chatbot</title>
+    <meta charset="UTF-8">
 </head>
 <body>
 <div class="container">
@@ -12,11 +12,11 @@
         <div class="chatbox__support">
             <div class="chatbox__header">
                 <div class="chatbox__image--header">
-                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                    <img class="img-head" src="https://img.pikbest.com/png-images/t-q-letter-logo--text-logo-design_5657530.png!f305cw" alt="image">
                 </div>
                 <div class="chatbox__content--header">
                     <h4 class="chatbox__heading--header">Chat support</h4>
-                    <p class="chatbox__description--header">Hi. My name is Sam. How can I help you?</p>
+                    <p class="chatbox__description--header">Hi. Iam QuerEase.AI powered FAQ chatbot. How can I help you?</p>
                 </div>
             </div>
             <div class="chatbox__messages">
@@ -37,6 +37,6 @@
         $SCRIPT_ROOT = {{ request.script_root|tojson }};
     </script>
     <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
-
 </body>
 </html>
+

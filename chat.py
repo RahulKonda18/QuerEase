@@ -43,9 +43,18 @@ def get_response(msg):
     if prob.item() > 0.75:
         for intent in intents['intents']:
             if tag == intent["tag"]:
-                return random.choice(intent['responses'])
+                return random.choice(intent['responses'])+"//Category: "+tag + str(intent['patterns'])
+    for intent in intents['intents']:
+        if "unknown" == intent["tag"]:
+            intent['patterns'].append(msg)
+            print(intent['patterns'])
+    newdata = json.dumps(intents, indent=4)
+    with open('modified.json', 'w') as file:
+        file.write(newdata)
     
-    return "I do not understand..."
+    return ("Thank you for your question! It seems currently I don't have information on that "
+            "specific question. I have escalated your query to our concerned team and"
+            " they will get back to you shortly.")
 
 
 if __name__ == "__main__":
