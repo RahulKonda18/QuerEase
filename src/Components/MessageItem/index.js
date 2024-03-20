@@ -1,7 +1,6 @@
 const MessageItem = (props) => {
   const { value, suggestion } = props;
   const { category, response, similar_questions } = value;
-  console.log(category);
   if (category === "QE") {
     return (
       <div className="shadow-2xl bg-black rounded-3xl p-5 mb-5 w-fit rounded-tl-none">

@@ -1,4 +1,4 @@
-import { Navigate } from "react-router-dom";
+import { Navigate, Link } from "react-router-dom";
 import { FaPowerOff } from "react-icons/fa";
 import { IoChatboxEllipsesOutline } from "react-icons/io5";
 import { ThreeDots } from "react-loader-spinner";
@@ -33,7 +33,6 @@ class Home extends Component {
   getData = async () => {
     const { query, chat } = this.state;
     const x = await fetch(`/members?query=${query}}`);
-    console.log(x);
     const y = await x.json();
     const z = await y.response;
     const prev = chat;
@@ -42,19 +41,25 @@ class Home extends Component {
       response: query,
       similar_questions: [],
     };
-    console.log(JSON.parse(z));
-    this.setState({
-      query: "",
-      isLoading: false,
-      chat: [...prev, prevQuery, JSON.parse(z)],
-    });
+    console.log(z);
+    if (typeof z === "object") {
+      console.log(z);
+      this.setState({
+        query: "",
+        isLoading: false,
+        chat: [...prev, prevQuery, z],
+      });
+    } else {
+      console.log(JSON.parse(z));
+      this.setState({
+        query: "",
+        isLoading: false,
+        chat: [...prev, prevQuery, JSON.parse(z)],
+      });
+    }
   };
 
   componentDidMount() {
-    this.scrollToBottom();
-  }
-
-  componentDidUpdate() {
     this.scrollToBottom();
   }
 
@@ -75,17 +80,26 @@ class Home extends Component {
       response: data,
       similar_questions: [],
     };
-    console.log(JSON.parse(z));
-    this.setState({
-      query: "",
-      isLoading: false,
-      chat: [...prev, prevQuery, JSON.parse(z)],
-    });
+
+    if (typeof z === "object") {
+      console.log(z);
+      this.setState({
+        query: "",
+        isLoading: false,
+        chat: [...prev, prevQuery, z],
+      });
+    } else {
+      console.log(JSON.parse(z));
+      this.setState({
+        query: "",
+        isLoading: false,
+        chat: [...prev, prevQuery, JSON.parse(z)],
+      });
+    }
   };
 
   render() {
     const { query, isLoading, chat } = this.state;
-    console.log(chat);
     if (Cookies.get("dashboard_token") === undefined) {
       return <Navigate to="/" replace={true} />;
     }
@@ -98,6 +112,12 @@ class Home extends Component {
               <IoChatboxEllipsesOutline className=" text-3xl mr-4" />
               <p className="text-2xl  font-medium">Customer support</p>
             </div>
+            <Link to="/faq">
+              <div className="flex mb-3 cursor-pointer text-white rounded-xl p-3 hover:text-white hover:bg-orange-400 transition ease-in-out delay-150 hover:-tranzinc-y-1 hover:scale-110">
+                <IoChatboxEllipsesOutline className=" text-3xl mr-4" />
+                <p className="text-2xl  font-medium">FAQ List</p>
+              </div>
+            </Link>
           </div>
           <div
             className="text-white cursor-pointer hover:bg-black hover:text-white flex justify-center items-center p-5 rounded-xl drop-shadow-2xl cursor-pointer hover:-translate-y-1 hover:scale-110 hover:text-orange-400"
