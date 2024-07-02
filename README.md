@@ -3,6 +3,12 @@
 ## Overview
 QuerEase is an innovative AI-driven solution designed to revolutionize the way users interact with Frequently Asked Questions (FAQs). Leveraging cutting-edge Natural Language Processing (NLP), Deep Learning, and LLM llama 2 validation techniques, QuerEase provides real-time, accurate, and reliable responses, significantly enhancing user experience.
 
+## Technologies Used
+1. React JS, Tailwind CSS for the Frontend User Interface.
+2. Python, Flask for Backend Server Implementation.
+3. NLP,CNN for text processing and LLM llama-2 for Response Validation and dynamic response generation using Prompt Engineering.
+4. Firebase for secure authentication.
+
 ## Features
 - **Natural Language Processing (NLP):** Utilizes advanced NLP models to understand and process user queries.
 - **Deep Learning:** Employs deep learning techniques for training on a diverse FAQ database, enabling precise response predictions.
