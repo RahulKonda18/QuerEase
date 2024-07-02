@@ -39,11 +39,11 @@ https://github.com/RahulKonda18/QuerEase-AI-final/assets/81863995/cea21003-5dfc-
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/RahulKonda18/QuerEase-AI-final.git
+   git clone https://github.com/RahulKonda18/QuerEase.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd QuerEase-AI-final
+   cd QuerEase
    ```
 3. Install the required dependencies:
    ```bash
@@ -58,11 +58,11 @@ https://github.com/RahulKonda18/QuerEase-AI-final/assets/81863995/cea21003-5dfc-
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/RahulKonda18/QuerEase.git
+   git clone https://github.com/RahulKonda18/QuerEase-Backend.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd QuerEase
+   cd QuerEase-Backend
    ```
 3. Install the required dependencies:
    ```bash
