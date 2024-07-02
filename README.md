@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+# QuerEase README
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+QuerEase is an innovative AI-driven solution designed to revolutionize the way users interact with Frequently Asked Questions (FAQs). Leveraging cutting-edge Natural Language Processing (NLP), Deep Learning, and LLM llama 2 validation techniques, QuerEase provides real-time, accurate, and reliable responses, significantly enhancing user experience.
 
-## Available Scripts
+## Features
+- **Natural Language Processing (NLP):** Utilizes advanced NLP models to understand and process user queries.
+- **Deep Learning:** Employs deep learning techniques for training on a diverse FAQ database, enabling precise response predictions.
+- **LLM Llama 2 Validation:** Ensures the accuracy and reliability of responses through a robust validation mechanism.
+- **Dynamic Response Generation:** Overcomes the limitations of static FAQ lists by dynamically generating responses using LLM-LLama-2-120b-chat and storing responses based on user interactions.
+- **Enhanced User Experience:** Provides faster and more accurate responses, reducing search times and improving overall satisfaction.
 
-In the project directory, you can run:
+## Architecture Diagram
 
-### `npm start`
+![FInal Architecture portrait drawio (4)](https://github.com/RahulKonda18/QuerEase-AI-final/assets/81863995/fac0b1ee-6dbd-42ae-aa87-75e49c28efdc)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Sequence Diagram
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![seq](https://github.com/RahulKonda18/QuerEase-AI-final/assets/81863995/789bdcfb-6a0a-450c-b161-b63abdb91f96)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/RahulKonda18/QuerEase-AI-final.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd QuerEase-AI-final
+   ```
+3. Install the required dependencies:
+   ```bash
+   npm install 
+   ```
+4. Start the dev server:
+   ```bash
+   npm start 
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Backend Server
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/RahulKonda18/QuerEase.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd QuerEase
+   ```
+3. Install the required dependencies:
+   ```bash
+   pip install -r requirements. txt 
+   ```
+   
+4. Start the QuerEase server:
+   ```bash
+   python app.py
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```
+5. Access the QuerEase interface via your web browser at `http://localhost:8000`.
 
-### `npm run eject`
+## Demo Video
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+https://github.com/RahulKonda18/QuerEase-AI-final/assets/81863995/1b5fd64e-6b38-4df0-a961-da07c633f8ae
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Configuration
+Configure the settings in `config.json`:
+- **data_path:** Path to the FAQ data file.
+- **model_save_path:** Path where the trained model will be saved.
+- **server_port:** Port on which the QuerEase server will run.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contributing
+We welcome contributions to enhance QuerEase. Please follow these steps:
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes.
+4. Commit your changes (`git commit -am 'Add new feature'`).
+5. Push to the branch (`git push origin feature-branch`).
+6. Open a pull request.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contact
+For questions or support, please contact us at [rahulkonda.work@outlook.com].
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Summary
+QuerEase uses advanced AI technologies to improve the efficiency and accuracy of FAQ retrieval, setting a new standard for user interactions with information systems. By seamlessly integrating NLP, Deep Learning, and LLM llama 2 validation, QuerEase ensures users receive the most accurate and reliable information in real-time.
