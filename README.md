@@ -14,6 +14,13 @@ QuerEase is an innovative AI-driven solution designed to revolutionize the way u
 
 ![FInal Architecture portrait drawio (4)](https://github.com/RahulKonda18/QuerEase-AI-final/assets/81863995/fac0b1ee-6dbd-42ae-aa87-75e49c28efdc)
 
+
+
+## Demo Video
+
+
+https://github.com/RahulKonda18/QuerEase-AI-final/assets/81863995/f1f0172d-042d-4d48-8798-6100378ad31d
+
 ## Sequence Diagram
 
 ![seq](https://github.com/RahulKonda18/QuerEase-AI-final/assets/81863995/789bdcfb-6a0a-450c-b161-b63abdb91f96)
@@ -59,12 +66,6 @@ QuerEase is an innovative AI-driven solution designed to revolutionize the way u
 
    ```
 5. Access the QuerEase interface via your web browser at `http://localhost:8000`.
-
-## Demo Video
-
-
-https://github.com/RahulKonda18/QuerEase-AI-final/assets/81863995/1b5fd64e-6b38-4df0-a961-da07c633f8ae
-
 
 
 ## Configuration
