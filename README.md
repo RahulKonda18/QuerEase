@@ -1,4 +1,4 @@
-# QuerEase README
+# QuerEase 
 
 ## Overview
 QuerEase is an innovative AI-driven solution designed to revolutionize the way users interact with Frequently Asked Questions (FAQs). Leveraging cutting-edge Natural Language Processing (NLP), Deep Learning, and LLM llama 2 validation techniques, QuerEase provides real-time, accurate, and reliable responses, significantly enhancing user experience.
