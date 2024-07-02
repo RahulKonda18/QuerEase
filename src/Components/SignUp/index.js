@@ -79,11 +79,11 @@ class SignUp extends Component {
               </label>
               <br />
               <input
-                className="placeholder:text-black text-black font-medium outline-0 bg-slate-100 w-full h-10 mt-3 mb-3 rounded-lg pl-3"
+                className="placeholder:text-gray-400 text-black outline-0 bg-slate-100 w-full h-10 mt-3 mb-3 rounded-lg pl-3"
                 type="text"
                 id="username"
                 value={usermail}
-                placeholder="johndoe@gmail.com"
+                placeholder="Enter your Email"
                 onChange={this.onChangeUsermail}
               />
               <br />
@@ -92,11 +92,11 @@ class SignUp extends Component {
               </label>
               <br />
               <input
-                className="placeholder:text-black text-black outline-0 bg-slate-100 w-full h-10 mt-3 mb-3 rounded-lg pl-3"
+                className="placeholder:text-gray-400 text-black outline-0 bg-slate-100 w-full h-10 mt-3 mb-3 rounded-lg pl-3"
                 type="password"
                 id="password"
                 value={password}
-                placeholder="••••••••"
+                placeholder="Enter your Password"
                 onChange={this.onChangePassword}
               />
               <br />
