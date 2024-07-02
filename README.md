@@ -19,7 +19,10 @@ QuerEase is an innovative AI-driven solution designed to revolutionize the way u
 ## Demo Video
 
 
-https://github.com/RahulKonda18/QuerEase-AI-final/assets/81863995/f1f0172d-042d-4d48-8798-6100378ad31d
+
+https://github.com/RahulKonda18/QuerEase-AI-final/assets/81863995/cea21003-5dfc-4312-b593-e6a71fa49a43
+
+
 
 ## Sequence Diagram
 
